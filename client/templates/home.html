@@ -1,0 +1,142 @@
+<template name="home">
+	<div class = "header">
+
+	<h1>Tweet-Time Comparison of Users</h1>	
+	</div>
+	<div class="list-group">
+		{{#each tweets}}
+			<a href="" class="list-group-item">{{tweet}}</a>
+			
+		{{/each}}
+	</div>
+	<div class="container" id="tablo">
+		<div class="row">
+			
+			<div class="col-md-4">
+				<h3 id="user">@{{user1}}</h3>
+				<table class="table table-striped">
+					
+					<thead>
+						<tr>
+						
+						<th>Time Period</th>
+						<th>Tweet Count</th>
+						<th>% Rate</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>					
+							<td>Morning</td>
+							<td>{{sabah1}}</td>
+							<td>% {{syzd1}}</td>					
+						</tr>
+						<tr>						
+							<td>Midday</td>
+							<td>{{oglen1}}</td>
+							<td>% {{oyzd1}}</td>							
+						</tr>
+						<tr>						
+							<td>Evening</td>
+							<td>{{aksam1}}</td>
+							<td>% {{ayzd1}}</td>							
+						</tr>
+						<tr>
+							<td>Night</td>
+							<td>{{gece1}}</td>
+							<td>% {{gyzd1}}</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<table class ="table table-striped">
+					<thead>
+						<tr>
+							<th>Most Tweeting Time</th>
+							<th>@{{user1}}</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								{{day1}},
+								%{{max1}}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+			
+			<div class="col-md-4">
+				<h3 id="user">@{{user2}}</h3>				
+				<table class="table table-striped">
+					
+					<thead>
+						<tr>
+						
+						<th>Time Period</th>
+						<th>Tweet Count</th>
+						<th>% Rate</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>					
+							<td>Morning</td>
+							<td>{{sabah2}}</td>
+							<td>% {{syzd2}}</td>					
+						</tr>
+						<tr>						
+							<td>Midday</td>
+							<td>{{oglen2}}</td>
+							<td>% {{oyzd2}}</td>						
+						</tr>
+						<tr>						
+							<td>Evening</td>
+							<td>{{aksam2}}</td>
+							<td>% {{ayzd2}}</td>						
+						</tr>
+						<tr>
+							<td>Night</td>
+							<td>{{gece2}}</td>
+							<td>% {{gyzd2}}</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				<table class ="table table-striped">
+					<thead>
+						<tr>
+							<th>Most Tweeting Time</th>
+							<th>@{{user2}}</th>
+							
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								{{day2}},
+								%{{max2}}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<table class ="table table-striped">
+					<thead>
+						<tr>
+							<th>Users Smilarity Rate</th>
+							<th>%{{smilarity}}</th>
+							
+						</tr>
+					</thead>
+					
+				</table>
+			
+		</div>
+	</div>	
+</template>
+
+
+
+    

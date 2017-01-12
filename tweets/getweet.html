@@ -1,0 +1,51 @@
+<template name="gettweet">
+	
+	<form class="submit1_user" enctype="multipart/form-data">
+		
+		<div class="form-group">
+				<label>1.User's NickName</label>
+								
+				<input type="text" name="name1" class="form-control" placeholder="1.User's Twitter Nickname">				
+		</div>
+				
+		<div>
+			<input type="submit" name="submit" class="btn btn-success" value="Confirm">
+			
+		</div>
+		
+	</form>
+	<hr>
+	<form class="submit_tweet1">
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Get Tweets !</button>		
+	</form>	
+	
+	<hr>
+	
+	<form class="submit2_user" enctype="multipart/form-data">
+		<div class="form-group">
+				<label>2.User's NickName</label>
+				<input type="text" name="name2" class="form-control" placeholder="2.User's Twitter Nickname">
+		</div>
+		
+		<div>
+			<input type="submit" name="submit" class="btn btn-success" value="Confirm">
+			
+		</div>
+	</form>
+	
+	<hr>
+
+	<form class="submit_tweet2">
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Get Tweets !</button>		
+	</form>	
+	<a href="#" class="show-result">Show Result</a>
+	<div id="user-panel">
+		<h3>Users Nickname</h3>
+		<div class="list-group">
+			{{#each users}}
+				<a href="" class="list-group-item">{{name}}</a>
+				
+			{{/each}}
+		</div>
+	</div>
+</template>

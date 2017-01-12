@@ -1,0 +1,38 @@
+footer{
+	background:#333;
+	color:#fff;
+	height:40px;
+	text-align: center;
+	padding-top:10px;
+	margin-top:40px;
+}
+.header{
+	text-align: center;
+}
+
+#tablo {
+	text-align: center;
+	display: none;
+}
+
+.table{
+	background-color: #00BFFF;
+}
+
+h3{
+	text-align: center;
+}
+
+#user{
+	text-align: center;
+	color: red;
+}
+
+body{
+	background-color: 	#B0E0E6;
+}
+
+
+#user-panel{
+	display: none;
+}
